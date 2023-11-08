@@ -1,3 +1,4 @@
+import os
 import yaml
 from pathlib import Path
 from datetime import datetime
@@ -46,17 +47,15 @@ def load_giskard_model_dataset() -> (BaseModel, Dataset):
 # Create a Giskard client after having install the Giskard server (see documentation)
 def push_test_to_giskard_server(test_suite):
 
-    import os
+    # read secret environment variables
     url = os.environ['GISKARD_SERVER_URL']
     api_key = os.environ['GISKARD_API_KEY']  # This can be found in the Settings tab of the Giskard Hub
     hf_token = os.environ['HF_TOKEN']  # If the Giskard Hub is installed on HF Space, this can be found on the Settings tab of the Giskard Hub
     project_name = os.environ['GISKARD_PROJECT_NAME']
 
     client = GiskardClient(url, api_key, hf_token)
-    
-    # my_project = client.get_project("llm_testing")
 
-    # Upload to the project you just created
+    # Upload test suite to the Giskard Hub
     test_suite.upload(client, project_name)
 
 
