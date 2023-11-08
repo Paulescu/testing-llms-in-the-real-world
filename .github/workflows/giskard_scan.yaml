@@ -14,7 +14,7 @@ env:
   OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
   GISKARD_SERVER_URL: ${{ secrets.GISKARD_SERVER_URL }}
   GISKARD_API_KEY: ${{ secrets.GISKARD_API_KEY }}
-  GISKRAD_PROJECT_NAME: ${{ secrets.GISKRAD_PROJECT_NAME }}
+  GISKARD_PROJECT_NAME: ${{ secrets.GISKRAD_PROJECT_NAME }}
   HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
 jobs:
