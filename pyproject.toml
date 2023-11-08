@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = ""
+authors = ["Paulescu <plabartabajo@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.12"
+pypdf = "<=3.17.0"
+faiss-cpu = "<=1.7.4"
+tiktoken = "<=0.5.1"
+python-dotenv = "^1.0.0"
+giskard = {extras = ["hub"], version = "^2.0.2"}
+langchain = "<=0.0.301"
+openai = "<=0.28.1"
+numpy = "^1.26.1"
+
+
+[tool.poetry.group.dev.dependencies]
+jupyter = "^1.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
