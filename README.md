@@ -3,7 +3,7 @@
 </div>
 
 <div align="center">
-    <h1>Test LLM chains with Giskard and MLOps best-practices</h1>
+    <h1>How to test LLM apps in the real-world with Giskard and MLOps best-practices</h1>
     <img src="./media/giskard_logo.png" width='250' />
 </div>
 
