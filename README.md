@@ -3,8 +3,9 @@
 </div>
 
 <div align="center">
-    <h1>How to test LLM apps in the real-world with Giskard and MLOps best-practices</h1>
-    <img src="./media/giskard_logo.png" width='250' />
+    <h1>How to test LLM apps in the real-world</h1>
+    <h2>with Giskard and MLOps best-practices</h2>
+    <img src="./media/diskard_ci_cd.gif" width='350' />
 </div>
 
 #### Table of contents
