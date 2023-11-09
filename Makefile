@@ -6,10 +6,10 @@ init:
 	poetry env use $(shell which python3.10) && \
 	poetry install
 
-run:
+model:
 	@echo "Running LLM chain"
-	poetry run python src/run.py
+	poetry run python src/build_model.py
 
 scan:
 	@echo "Running Giskard scan"
-	poetry run python src/scan.py	
+	poetry run python src/scan_model.py
