@@ -23,7 +23,7 @@ Typical mistakes include:
 
 * hallucinations
 * misinformation
-*  harmfulness, or
+* harmfulness, or
 * disclosures of sensitive information
 
 And the thing is, these mistakes are no big deal when you are building a demo. 
@@ -60,10 +60,16 @@ to build an automatic testing workflow for your LLM app.
     $ make init
     ```
 
-2. Create an `.env` file and fill in the necessary credentials. You will need an OpenAI API Key, and optionally a few Giskard Hub and HF credentials if you plan to use the Giskard Hub.s
+2. Create an `.env` file and fill in the necessary credentials. You will need an OpenAI API Key, and optionally a few Giskard Hub and HF credentials if you plan to use the Giskard Hub.
+    ```
+    $ cp .env.example .env
+    ```
 
-3. Check the Actions pannel in your GitHub repo, and see the testing happening!
+3. Make a change in the `hyper-parameters.yaml` file, for example update the `PROMPT_TEMPLATE`, commit your changes, push them to your remote GitHub repo and open a Pull request.
 
+4. Check the Actions pannel in your GitHub repo, and see the testing happening!
+
+5. Once the action completed, check the PR discussion to see the testing results, and decide if you want to merge with master, or not.
 
 ## Video lecture
 
