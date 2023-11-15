@@ -17,6 +17,7 @@ env:
   GISKARD_PROJECT_NAME: ${{ secrets.GISKRAD_PROJECT_NAME }}
   HF_TOKEN: ${{ secrets.HF_TOKEN }}
 
+
 jobs:
   run:
     runs-on: ubuntu-latest
@@ -81,7 +82,7 @@ jobs:
           cp report/* reports/.
           git add reports
           git commit -m "🤖 github-bot: Updated Reports"
-          git push
+          git push https://${{ secrets.GH_PAT }}@github.com/Paulescu/testing-llms-in-the-real-world.git HEAD:main
           echo "::set-output name=sha::$(git rev-parse HEAD)"
         
       - name: Extract md report
