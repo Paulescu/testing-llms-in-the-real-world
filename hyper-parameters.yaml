@@ -16,4 +16,4 @@ PROMPT_TEMPLATE: |
   Question:
   {question}
 
-  Your answer please:
+  Your answer:
